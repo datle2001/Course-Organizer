@@ -1,0 +1,7 @@
+Next step: 
+1. pass every data of a course as a string in dragFromSchedule in table.js (done)
+2. retrieve the passed data in drop in table.js and set container text to the course title (done)
+3. Sent data back and fro the background and content scripts (done)
+4. populate the table with available data (done)
+5. improve on UI
+6. set listener for when user backs to the url

@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Course Organizer",
+  "version": "1.0",
+
+  "description": "Keep the hassles that come with UI of class schedule at bay and make your course selection process smooth and seamless",
+  
+  "icons": {
+    "48": "icons/closed-book-icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.my.depauw.edu/e/reg/soc-view/results.asp*"],
+      "js": ["organizer.js", "header.js","table.js", "footer.js", "communication.js" ],
+      "css": ["index.css"]
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ]
+}
